@@ -1,0 +1,10 @@
+import Link from "next/link";
+import { ArrowRight, Leaf, Heart, Sparkles, ShieldCheck } from "lucide-react";
+import { MobileNav, SiteHeader } from "./site-header";
+
+export function AboutPage(){return <main><SiteHeader/><div className="page-shell inner-page about-page">
+ <section className="about-hero"><span className="section-kicker">OUR STORY</span><h1>A bakery built around<br/><em>the good stuff.</em></h1><p>MamMameyo is a premium bakery in Bahria Town, Rawalpindi, created for the moments where food becomes part of the memory.</p></section>
+ <section className="about-story"><div className="about-photo"><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1400&q=85" alt="Warm bakery interior" loading="lazy"/></div><div><span className="section-kicker">BAKED IN RAWALPINDI</span><h2>Freshness should feel personal.</h2><p>We keep the process thoughtful: good ingredients, careful preparation, patient finishing and packaging that feels worthy of the person receiving it.</p><p>Whether you're picking up a morning pastry or planning a wedding dessert table, our aim is simple — make it delicious, beautiful and dependable.</p><Link href="/menu" className="text-link">Explore the bakery <ArrowRight size={15}/></Link></div></section>
+ <section className="values-grid">{[[Leaf,"Fresh ingredients","We choose ingredients for flavour, texture and consistency."],[Heart,"Made with care","Small details matter, from the crumb to the final ribbon."],[Sparkles,"Beautiful finish","Every order should feel like a little occasion."],[ShieldCheck,"Reliable service","Clear ordering, careful packing and thoughtful delivery."]].map(([I,t,p])=>{const Icon=I as typeof Leaf;return <article key={t as string}><Icon size={22}/><h3>{t as string}</h3><p>{p as string}</p></article>})}</section>
+ <section className="about-cta"><span className="section-kicker">READY WHEN YOU ARE</span><h2>Let's bake something<br/><em>worth remembering.</em></h2><Link href="/custom-cake" className="primary-button">Create your cake <ArrowRight size={16}/></Link></section>
+ </div><MobileNav/></main>}

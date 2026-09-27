@@ -1,0 +1,3 @@
+import { ContactPage } from "@/components/contact-page";
+export const runtime = 'edge';
+export default function Page(){return <ContactPage/>}
