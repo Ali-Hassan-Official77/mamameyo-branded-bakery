@@ -20,8 +20,9 @@ export function ProductPage({ slug }: { slug: string }) {
   const related=products.filter(p=>p.id!==product.id&&p.category===product.category).slice(0,4);
 
   function addCustomized(){
-    for(let i=0;i<quantity;i++) addToCart(product);
-  }
+  if(!product) return;
+  for(let i=0;i<quantity;i++) addToCart(product);
+}
 
   return <main><SiteHeader/><div className="page-shell inner-page product-detail-page"><Link href="/menu" className="back-link"><ArrowLeft size={16}/> Back to collection</Link>
     <div className="detail-layout">
