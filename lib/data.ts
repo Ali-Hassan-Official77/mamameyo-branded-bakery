@@ -121,7 +121,7 @@ export const products: Product[] = [
       "Buttermilk",
     ],
     image:
-      "https://i.pinimg.com/1200x/63/ce/84/63ce84cf5b948ecf95304a25ce8b5834.jpg?auto=format&fit=crop&w=1200&q=85",
+      "/products/red-cake.png?auto=format&fit=crop&w=1200&q=85",
     badge: "BESTSELLER",
     popular: true,
     accent: "#9d492b",
@@ -233,7 +233,7 @@ export const products: Product[] = [
       "Brown sugar",
     ],
     image:
-      "https://i.pinimg.com/1200x/2c/30/24/2c302496197d48115f20a161aa49a9ea.jpg?auto=format&fit=crop&w=1200&q=85",
+      "/products/dark-fudge.png?auto=format&fit=crop&w=1200&q=85",
     badge: "BESTSELLER",
     popular: true,
   },
@@ -318,7 +318,7 @@ export const products: Product[] = [
       "Parsley",
     ],
     image:
-      "https://i.pinimg.com/736x/31/43/46/314346bf2c8b89191e82a07f26d199e5.jpg?auto=format&fit=crop&w=1200&q=85",
+      "/products/garlic-naan.png?auto=format&fit=crop&w=1200&q=85",
   },
 
   {
@@ -338,7 +338,7 @@ export const products: Product[] = [
       "Herbs",
     ],
     image:
-      "https://i.pinimg.com/1200x/30/c7/56/30c75644623ac4b1ac5ee06acba5f9df.jpg?auto=format&fit=crop&w=1200&q=85",
+      "/products/chicken-puff.png?auto=format&fit=crop&w=1200&q=85",
     badge: "SAVORY PICK",
   },
 
