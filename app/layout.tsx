@@ -16,5 +16,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" suppressHydrationWarning><body><AppProvider>{children}</AppProvider></body></html>;
+  return <html lang="en" suppressHydrationWarning><body><AppProvider>{children}</AppProvider>
+  <script src="https://cdn.zanderio.ai/widget/loader.js" data-id="wdg_mp6xX9Kvs38mD1tnz82MYhx6" defer></script>
+  </body></html>;
 }
